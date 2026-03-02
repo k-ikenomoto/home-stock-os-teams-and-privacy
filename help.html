@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヘルプ - HomeStockOS</title>
+  <style>
+    :root {
+      --primary: #006B5E;
+      --primary-light: #e0f2ef;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --border: #d0e8e4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Yu Gothic UI", "Hiragino Sans", "Meiryo", "BIZ UDPGothic", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .intro {
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .faq-a {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .effective-date {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 36px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 19px;
+      }
+      .section {
+        padding: 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">HomeStockOS — おうちのストック管理</div>
+  <h1>ヘルプ（よくある質問）</h1>
+</header>
+
+<div class="container">
+  <div class="intro">
+    HomeStockOSの使い方と、困ったときの対処をまとめています。<br>
+    買い物中に「買う／買わない」を素早く判断できるよう、主要機能に絞って案内します。
+  </div>
+
+  <div class="section">
+    <h2>1. 登録と基本操作</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. 名前を入力しなくても大丈夫？</p>
+      <p class="faq-a">A. はい。HomeStockOSは「写真＋場所」で登録できます。商品名は任意で、未入力でも利用できます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 在庫を登録する手順は？</p>
+      <p class="faq-a">A. ホーム画面の下部中央カメラボタンから撮影し、保存画面で場所を選んで登録します。連続撮影にも対応しています。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. アイテムを削除するには？</p>
+      <p class="faq-a">A. 場所一覧または「すべて」一覧からアイテム詳細を開き、「削除」を選択してください。確認後に削除されます。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. 在庫状態と期限</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. 在庫状態（十分・少ない・ない）はどこで変更できますか？</p>
+      <p class="faq-a">A. 場所一覧の状態バッジ(写真の下)やアイテム詳細画面の「状態」から変更できます。変更内容は一覧やホームの件数表示に反映されます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 期限設定を変更するには？</p>
+      <p class="faq-a">A. アイテム詳細画面の「期限を設定／変更」をタップし、相対ボタン（今日、明日、3日、1週間など）から更新できます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 要買い物タグは何に使いますか？</p>
+      <p class="faq-a">A. 買い物リストとして使う目印です。場所一覧(写真の左上)やアイテム詳細でオンにすると、一覧や通知の判断に使えます。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. 画面の見方と使い分け</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. 「ホーム」「場所一覧」「すべて一覧」はどう使い分けますか？</p>
+      <p class="faq-a">A. ホームは場所ごとの全体把握、場所一覧はその場所だけの確認、「すべて」は場所をまたいだ一括確認に使います。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 買い物中はどの画面を見るのが最短ですか？</p>
+      <p class="faq-a">A. まずホームで状態を確認し、必要なら「すべて」や対象場所を開くと、3秒判断しやすくなります。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>4. グループ機能</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. グループは何のための機能ですか？</p>
+      <p class="faq-a">A. よく一緒に確認するアイテムをまとめるための機能です。場所画面と「すべて」画面で利用できます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. グループ数に上限はありますか？</p>
+      <p class="faq-a">A. あります。無料プランでは、場所ごとのグループは最大3件、「すべて」画面のグループも最大3件です。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 上限に達した場合はどうなりますか？</p>
+      <p class="faq-a">A. 追加時に案内ダイアログが表示されます。不要なグループを削除して枠を空けることで追加できます。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5. 通知と設定</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. 通知時間を変更するには？</p>
+      <p class="faq-a">A. 「その他･設定」→「通知時間」から変更できます。変更後は次回通知から反映されます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 通知はどんな内容が届きますか？</p>
+      <p class="faq-a">A. 要買い物・残り少・期限間近のアイテムをまとめて通知します。通知を開くと確認画面に移動できます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 通知が届かないときの確認ポイントは？</p>
+      <p class="faq-a">A. 端末設定で通知権限が許可されているか、アプリ内の通知時間が意図した時刻になっているかを確認してください。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>6. よくあるトラブル</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. 間違って削除した写真は戻せますか？</p>
+      <p class="faq-a">A. いいえ。削除したアイテムと写真は復元できません。削除前の確認ダイアログで内容を確認してください。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. オンボーディングをもう一度見たいです。</p>
+      <p class="faq-a">A. 「その他･設定」→「ヘルプ」の下部にある「オンボーディングをもう一度見る」から再表示できます。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. 利用規約やプライバシーポリシーはどこで確認できますか？</p>
+      <p class="faq-a">A. 「その他･設定」画面の規約メニューから、いつでも最新版を確認できます。</p>
+    </div>
+  </div>
+
+  <p class="effective-date">最終更新日: 2026年3月2日</p>
+</div>
+
+<footer>
+  &copy; 2026 HomeStockOS. All rights reserved.
+</footer>
+
+</body>
+</html>
