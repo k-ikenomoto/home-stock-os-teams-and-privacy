@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help - HomeStockOS</title>
+  <style>
+    :root {
+      --primary: #006B5E;
+      --primary-light: #e0f2ef;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --border: #d0e8e4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+
+    header .app-name {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-bottom: 6px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .intro {
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      color: var(--primary);
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .faq-q {
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .faq-a {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .effective-date {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 36px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 19px;
+      }
+      .section {
+        padding: 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-name">HomeStockOS — Home Stock Management</div>
+  <h1>Help (FAQ)</h1>
+</header>
+
+<div style="text-align:right; max-width:720px; margin:12px auto 0; padding:0 20px; font-size:13px;">
+  <a href="help.html" style="color:#006B5E; text-decoration:none; font-weight:600;">日本語</a>
+</div>
+
+<div class="container">
+  <div class="intro">
+    Here's how to use HomeStockOS and what to do if you run into trouble.<br>
+    We keep this focused on the core features, so you can decide what to buy or not buy in 3 seconds while shopping.
+  </div>
+
+  <div class="section">
+    <h2>1. Registering items &amp; basic operations</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. Do I have to type a name for each item?</p>
+      <p class="faq-a">A. No. HomeStockOS lets you register items with just a photo and a location. The item name is optional and can be left blank.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. How do I register a stock item?</p>
+      <p class="faq-a">A. Tap the camera button at the bottom center of the Home screen, take a photo, then choose a location on the save screen to register it. Taking multiple photos in a row is also supported.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. How do I delete an item?</p>
+      <p class="faq-a">A. Open the item's detail screen from a location list or the "All" list, then select "Delete." The item is deleted after you confirm.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. Stock level &amp; expiry</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. Where can I change the stock level (Plenty / Low / Out)?</p>
+      <p class="faq-a">A. You can change it from the status badge under the photo in a location list, or from "Stock level" on the item detail screen. Changes are reflected in the lists and the count shown on Home.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. How do I change the expiry date?</p>
+      <p class="faq-a">A. Tap "Set/change expiry date" on the item detail screen, then update it using the relative buttons (Today, Tomorrow, 3 days, 1 week, etc.).</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. What is the "To buy" tag for?</p>
+      <p class="faq-a">A. It's a marker for your shopping list. Turn it on from a location list (top-left of the photo) or the item detail screen, and it's used when deciding what to check in lists and notifications.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Screens and when to use them</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. How should I use "Home," location lists, and the "All" list?</p>
+      <p class="faq-a">A. Home gives you an overview by location, a location list shows just that one location, and "All" lets you check everything across locations at once.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. Which screen is fastest to check while shopping?</p>
+      <p class="faq-a">A. Start with Home to check status, then open "All" or the relevant location if you need more detail — that's the quickest path to a 3-second decision.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>4. Groups</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. What are groups for?</p>
+      <p class="faq-a">A. Groups let you bundle items you often check together. They're available on location screens and the "All" screen.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. Is there a limit on the number of groups?</p>
+      <p class="faq-a">A. Yes. On the free plan, you can have up to 3 groups per location and up to 3 groups on the "All" screen.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. What happens if I reach the limit?</p>
+      <p class="faq-a">A. A notice dialog appears when you try to add another. Delete a group you no longer need to free up a slot.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>5. Home screen widget</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. What does the widget show?</p>
+      <p class="faq-a">A. Three count chips: "To Buy," "Low," and "Expiring." A chip is shown in a muted color when its count is 0, and in an accent color when it's 1 or more.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. How do I add it to my home screen?</p>
+      <p class="faq-a">A. Long-press your device's home screen, open "Widgets," find the HomeStockOS stock alert widget, and drag it into place. Once added, you can resize it horizontally and vertically.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. What happens when I tap the widget?</p>
+      <p class="faq-a">A. It opens the app's Home screen. The counts update automatically as your items change; if you want an immediate refresh, tap the refresh icon on the widget (shown only when the widget is large enough).</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>6. Notifications &amp; settings</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. When does the Shopping reminder arrive?</p>
+      <p class="faq-a">A. By default, it arrives daily at 18:00. Go to "More/Settings" → "Pre-shopping reminder" to change the days (multiple days can be selected; at least one is required) and the time.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. What does the notification tell me?</p>
+      <p class="faq-a">A. It summarizes items that are to-buy, running low, or expiring soon. If there are no matching items, no notification is sent. Tapping the notification opens the "All" list filtered to those items.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. What should I check if notifications don't arrive?</p>
+      <p class="faq-a">A. Check that the reminder is turned on under "More/Settings" → "Pre-shopping reminder," and that notifications are allowed for the app in your device settings.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>7. Common issues</h2>
+    <div class="faq-item">
+      <p class="faq-q">Q. Can I recover a photo I deleted by mistake?</p>
+      <p class="faq-a">A. No. Deleted items and their photos cannot be restored. Please check the details in the confirmation dialog before deleting.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. I want to see the onboarding walkthrough again.</p>
+      <p class="faq-a">A. You can replay it from "Show onboarding again," near the bottom of "More/Settings" → "Help."</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. Is there a button to agree to the Terms of Use and Privacy Policy?</p>
+      <p class="faq-a">A. By reading the notice shown on first launch and continuing into the app, you are deemed to have agreed to the Terms of Use and Privacy Policy (implied consent). There is no separate "agree" button, but you can review the full text anytime from the legal menu in "More/Settings."</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Q. Where can I find the Terms of Use and Privacy Policy?</p>
+      <p class="faq-a">A. You can view the latest version anytime from the legal menu on the "More/Settings" screen.</p>
+    </div>
+  </div>
+
+  <p class="effective-date">Last updated: July 7, 2026</p>
+</div>
+
+<footer>
+  &copy; 2026 HomeStockOS. All rights reserved.
+</footer>
+
+</body>
+</html>
